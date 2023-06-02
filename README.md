@@ -3,7 +3,7 @@ Trabajo Práctico Entregable Nº4: Diseño de un modelo de sitio web para una in
 
 ## Etapas a cumplir del proyecto:
 
-Investigación y análisis: Realizar una investigación sobre la institución elegida,
+**Investigación y análisis**: Realizar una investigación sobre la institución elegida,
 comprendiendo sus objetivos, público objetivo y necesidades. Analizar la competencia y
 recopilar información relevante que ayude a tomar decisiones informadas en las etapas
 siguientes.
@@ -25,7 +25,7 @@ experiencia del usuario en el sitio web.
 Implementar las interacciones, las animaciones asegurando de que el frontend sea
 responsive y compatible con diferentes dispositivos y navegadores.
 
-## Y debe contar con las siguientes secciones:
+## Debe contar con las siguientes secciones:
 **Página de inicio de la institución:** Crear una pantalla de inicio atractiva y funcional que
 brinde información relevante sobre la institución. Esta pantalla debe ser atractiva
 visualmente y describir de manera clara los objetivos y actividades de la institución.
