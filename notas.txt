@@ -11,3 +11,4 @@ armar un header gral (uno para socio/admin) (e invitado)
 el hamburguer tmb gral (socio, admin e invitado)
 footer siempre igual
 hacer responsive con desktop
+ARGUMENTAR TODO CON GESTALD, estamos preparados para el oral...
