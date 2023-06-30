@@ -19,43 +19,46 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <img src="../images/logo.png" alt="" class="rotary-logo">
-                <button class="btn btn-outline-success" type="submit">Ingresar</button>
-                <button class="btn btn-primary" type="submit">Dona</button>
+                <a href="../index.html"><img src="../images/logo.png" alt="" class="rotary-logo"></a>
+                <button class="btn btn-outline-success" type="submit" onclick="window.location.href = '../pages/login.html'">Ingresar</button>
+                <button class="btn btn-primary" type="submit" onclick="window.location.href = '../pages/donaciones.html'">Dona</button>
 
             </div>
         </nav>
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-light p-4" id="menu-collapse">
-                <div><a href="../pages/register.html">Asociate</a><img class="socio-logo"
+                <div><a href="../pages/register.html">Asociese</a><img class="socio-logo"
                         src="../images/socioAsociate.png" alt=""></div>
                 <div class="head-elem"><a href="../pages/about.html">Quienes Somos</a></div>
             </div>
         </div>
     </header>
 
-    <form>
+    <form class="contenido">
+        <h2>Registro de Usuario</h2>
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre y Apellido</label>
-            <input type="text" class="form-control" id="nombre-usuario">
+            <input type="text" placeholder="John Doe" class="form-control" id="nombre-usuario">
         </div>
         <div class="mb-3">
             <label for="fecha-nacimiento" class="form-label">Fecha Nacimiento</label>
-            <input type="text" class="form-control" id="fecha-nacimiento">
+            <input type="text" placeholder="DD/MM/YYYY" class="form-control" id="fecha-nacimiento">
         </div>
         <div class="mb-3">
             <label for="dni" class="form-label">D.N.I</label>
-            <input type="number" class="form-control" id="dni">
+            <input type="number" placeholder="44597621" class="form-control" id="dni">
         </div>
         <div class="mb-3">
             <label for="domicilio-usuario" class="form-label">Domicilio</label>
-            <input type="text" class="form-control" id="domicilio-usuario">
+            <input type="text" placeholder="Av. Smirnoff 7400, Piso 1B" class="form-control" id="domicilio-usuario">
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1" class="form-label" placeholder="franco@gmail.com">E-mail</label>
+            <input type="email" class="form-control" placeholder="john@gmail.com" id="exampleInputEmail1" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">No compartiremos tu E-mail con nadie.</div>
         </div>
+        <button class="btn btn-primary" type="submit">Registrarse</button>
+
     </form>
 
     <footer class="border-top flex-row">

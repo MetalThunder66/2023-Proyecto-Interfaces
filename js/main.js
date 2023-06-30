@@ -1,5 +1,13 @@
 "use strict";
-let admin = ['admin', 'password']
+let admin = {
+    username: "admin",
+    password: "admin",
+}
+
+let user = {
+    username: "user",
+    password: "user",
+}
 
 let ajaxEditar = `
     <div>
@@ -10,7 +18,7 @@ let ajaxEditar = `
 `;
 
 //formularios
-/*
+
 let formLogin = document.querySelector('');
 let errorLogin = document.querySelector('');
 let formRegister = document.querySelector('');
@@ -48,4 +56,3 @@ formRegister.addEventListener("submit", function (e) {
         let errorRegister.style.display = 'block'; //se muestra el error q esta hidden en el html
     }
 })
-*/
