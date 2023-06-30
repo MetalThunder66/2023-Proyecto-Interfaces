@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="fixed-top">
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -21,10 +21,11 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a href="../index.html"><img src="../images/logo.png" alt="" class="rotary-logo"></a>
-                <button class="btn btn-outline-success" type="submit"
-                    onclick="window.location.href = '../pages/login.html'">Ingresar</button>
-                <button class="btn btn-primary" type="submit"
-                    onclick="window.location.href = '../pages/donaciones.html'">Dona</button>
+                <div>
+                    <button class="btn btn-outline-success" type="submit" onclick="window.location.href = '../pages/login.html'">Ingresar</button>
+                    <button class="btn btn-primary" type="submit" onclick="window.location.href = '../pages/donaciones.html'">Dona</button>
+                </div>
+                
 
             </div>
         </nav>
@@ -38,7 +39,7 @@
     </header>
 
     <div>
-        <div class="contenido">
+        <div class="contenido section-top">
             <h4 class="donar">CóMO DONAR</h4>
             <p>Para aportar donaciones a nuestro club podés a través de transferencia bancaria o medios físicos, se
                 acepta

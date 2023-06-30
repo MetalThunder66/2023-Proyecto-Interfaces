@@ -56,12 +56,18 @@ span a, span a:visited {
     
 }
 
-.home{
-    margin-top:100px;
+.section-top{
+    margin-top:80px;
+}
+
+.success {
+    color: rgb(9, 173, 9);
+    font-weight: 500;
 }
 
 .warning {
     color: red;
+    font-weight: 500;
 }
 
 .hidden {

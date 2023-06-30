@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="fixed-top">
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -20,8 +20,11 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a href="../index.html"><img src="../images/logo.png" alt="" class="rotary-logo"></a>
-                <button class="btn btn-outline-success" type="submit" onclick="window.location.href = '../pages/login.html'">Ingresar</button>
-                <button class="btn btn-primary" type="submit" onclick="window.location.href = '../pages/donaciones.html'">Dona</button>
+                <div>
+                    <button class="btn btn-outline-success" type="submit" onclick="window.location.href = '../pages/login.html'">Ingresar</button>
+                    <button class="btn btn-primary" type="submit" onclick="window.location.href = '../pages/donaciones.html'">Dona</button>
+                </div>
+                
 
             </div>
         </nav>
@@ -34,17 +37,16 @@
         </div>
     </header>
 
-    <form class="contenido">
+    <form class="form-login contenido section-top">
         <h2>Ingresar</h2>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">E-mail</label>
-            <input type="email" placeholder="john@gmail.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <p id="email-warning" class="warning hidden">E-mail incorrecto. Verifique el dato ingresado.</p>
+            <input name="email" type="email" required placeholder="john@gmail.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" placeholder="Ingrese su contraseña" class="form-control" id="exampleInputPassword1">
-            <p id="password-warning" class="warning hidden">Contraseña incorrecta. Verifique el dato ingresado.</p>
+            <input name="password" type="password" required placeholder="Ingrese su contraseña" class="form-control" id="exampleInputPassword1">
+            <p id="login-error" class="warning hidden">E-mail o contraseña incorrectos.</p>
         </div>
         <div>
             <p>¿No posee una cuenta? <span class="register-span"><a href="../pages/register.html">Registrese aquí</a></span></p>
@@ -91,9 +93,13 @@
 
 
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <script src="../js/login.js"></script>
 </body>
 
 </html>
