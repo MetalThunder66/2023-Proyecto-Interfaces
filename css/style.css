@@ -1,0 +1,49 @@
+@media (max-width: 600px) {
+    body{
+        background-color: aliceblue;
+        
+    }
+
+    iframe{
+        height:100%;
+        width: 100%;
+    }
+
+    .rotary-logo, .socio-logo{
+        height: 55px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+
+    #menu-collapse{
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+        border-top: solid 0.01px rgb(91, 87, 87);
+
+
+    }
+
+    .footer-elem{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 10px;
+    }
+
+    .head-elem{
+        border-top: solid 0.01px rgb(91, 87, 87);  
+        padding-top: 10px;  
+    }
+
+}
+
+header{
+    border-bottom: solid 0.01px rgb(91, 87, 87);
+    
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+
+
