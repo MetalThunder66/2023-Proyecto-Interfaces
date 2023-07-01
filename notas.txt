@@ -2,11 +2,8 @@ doc bootstrap: https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
 MOBILE FIRST!
 poner todo lo del .doc con la info resumida (https://docs.google.com/document/d/1CzGqlO_2zYGY6bqQCE_2oyj2J6h9YNIlGBkiYyLvtO0/edit) en los .html
-js lo vamos a usar para? (verificar el login, tabla dinámica de socios(?)
-hay que ver como hacer los index para el socio y para el admin
-css se puede usar tmb para complementar
-armar un header gral (uno para socio/admin) (e invitado)
-el hamburguer tmb gral (socio, admin e invitado)
+armar headers (para socio/admin), (invitado)
+hamburguers (socio, admin e invitado)
 footer siempre igual
 hacer responsive con desktop
 ARGUMENTAR TODO CON GESTALD, estamos preparados para el oral...
