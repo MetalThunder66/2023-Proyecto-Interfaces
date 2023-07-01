@@ -19,12 +19,12 @@ for (const BUTTON of editButtons) {
         acceptButton.addEventListener("click", function(e) {
             if (field.value !== '') {
                 if (atributo == 'email') {
-                    email.textContent = field.value;
+                    email.textContent = "Email: " + field.value;
                     field.value = '';   //lo limpia
                     editPopup.classList.add("hidden");
                     editError.classList.add("hidden");
                 } else if (atributo == 'address') {
-                    address.textContent = field.value;
+                    address.textContent = "Domicilio: " + field.value;
                     field.value = '';   //lo limpia
                     editPopup.classList.add("hidden");
                     editError.classList.add("hidden");

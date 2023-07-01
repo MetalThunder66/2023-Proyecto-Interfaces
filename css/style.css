@@ -96,12 +96,13 @@ footer{
     background-color: rgb(224, 218, 218);  
 }
 
+/* 
 .footer-elem{
-    /* display: flex;
+    display: flex;
     justify-content: space-evenly;
     padding-top: 10px;
-    border-bottom: solid 1px black;  */
-}
+    border-bottom: solid 1px black;  
+}*/
 
 span a, span a:visited {
     text-decoration: underline;
