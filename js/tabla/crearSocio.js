@@ -3,6 +3,7 @@
 //agarramos la tabladinamica
 let tablaDinamicaDom = document.querySelector("#tablaDinamica");
 
+let creationSuccess = document.querySelector('#creation-success');
 let createMember = document.querySelector("#create-member");
 
 createMember.addEventListener('click', function (e) {
@@ -22,7 +23,7 @@ async function add() {
         dni: dniInput,
         email: emailInput,
     }
-
+    
     try {//fetcheamos la API y le insertamos el obj creado stringifeado
         let response = await fetch(`https://64a08f0eed3c41bdd7a75c41.mockapi.io/socio`, {
             'method': 'POST',
@@ -32,9 +33,10 @@ async function add() {
             'body': JSON.stringify(obj)
         });
     }
-
     catch (error) {
         console.log(error);
     };
+    
+    creationSuccess.classList.remove("hidden");
 }
 
