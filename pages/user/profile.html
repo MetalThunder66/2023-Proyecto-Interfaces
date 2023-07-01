@@ -45,21 +45,21 @@
         <li>44.284.548</li>
         <li>Club: Rotaract</li>
         <li>Años en rotary: 2 años</li>
-        <li class="flex">
+        <li id="edit-option">
           <p id="profile-email">Email: jaimito@gmail.com</p>
-          <a data="email" id="edit-button-email" href="#"><img class="btn-primary modificar-socio" src="/images/edit.png" alt="edit-member" /></a>
+          <a data-id="email" href="#"><img class="btn-primary modificar-socio edit-button" src="/images/edit.png" alt="edit-member" /></a>
         </li>
-        <li>
+        <li id="edit-option">
           <p id="profile-address">Domicilio: Av. Smirnoff 7400, Piso 1B</p>
-          <a data="address" id="edit-button-address" href="#"><img class="btn-primary modificar-socio" src="/images/edit.png" alt="edit-member" /></a>
+          <a data-id="address" href="#"><img class="btn-primary modificar-socio edit-button" src="/images/edit.png" alt="edit-member" /></a>
         </li>
       </ul>
     </div>
 
     <div class="edit-popup-container hidden">
-      <form id="form-edit-popup" class="edit-popup">
+      <div id="form-edit-popup" class="edit-popup">
         <label class="form-label">Editar campo</label>
-        <input name="edit-field" placeholder="john@gmail.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <input placeholder="john@gmail.com" class="form-control" id="edit-field" aria-describedby="emailHelp">
         
         <p id="edit-error" class="warning hidden">Complete el campo.</p>
 
@@ -67,7 +67,7 @@
           <button id="edit-popup-btn-accept" class="btn btn-success" type="submit">Aceptar</button>
           <button id="edit-popup-btn-decline" class="btn btn-danger">Cancelar</button>
         </div>
-      </form>
+      </div>
     </div>
     
   </div>

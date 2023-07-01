@@ -80,7 +80,9 @@ a, a:visited{
     
 }
 
-
+.edit-option {
+    display: flex;
+}
 
 .modificar-socio{
     width: 50px;
