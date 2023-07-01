@@ -7,6 +7,7 @@ const id = urlParams.get('id');
 //agarramos la tabladinamica
 let tablaDinamicaDom = document.querySelector("#tablaDinamica");
 let editMember = document.querySelector("#edit-member");
+let editSuccess = document.querySelector('#edit-success');
 
 editMember.addEventListener('click', function (e) {
     e.preventDefault();
@@ -41,4 +42,6 @@ async function edit() {
     catch (error) {
         console.log(error);
     }
+
+    editSuccess.classList.remove("hidden");
 }
