@@ -2,8 +2,7 @@ doc bootstrap: https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
 MOBILE FIRST!
 poner todo lo del .doc con la info resumida (https://docs.google.com/document/d/1CzGqlO_2zYGY6bqQCE_2oyj2J6h9YNIlGBkiYyLvtO0/edit) en los .html
-armar headers (para socio/admin), (invitado)
-hamburguers (socio, admin e invitado)
-footer siempre igual
+AJAX hacerlo
+terminar footer
 hacer responsive con desktop
 ARGUMENTAR TODO CON GESTALD, estamos preparados para el oral...

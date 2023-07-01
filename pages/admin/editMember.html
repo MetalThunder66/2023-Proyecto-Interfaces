@@ -19,18 +19,20 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href="/index.html"><img src="/images/logo.png" alt="" class="rotary-logo"></a>
+                <a href="home.html"><img src="/images/logo.png" alt="" class="rotary-logo"></a>
                 <div>
-                    <button class="btn btn-outline-success" type="submit" onclick="window.location.href = '../pages/login.html'">Ingresar</button>
-                    <button class="btn btn-primary" type="submit" onclick="window.location.href = '/pages/donaciones.html'">Dona</button>
+                    <a href="/index.html"><img src="/images/logout.png" alt="" class="logout-icon"></a>
+                    <button class="btn btn-primary" type="submit" onclick="window.location.href = 'donaciones.html'">Dona</button>
                 </div>
+                
+
             </div>
         </nav>
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-light p-4" id="menu-collapse">
-                <div><a href="/pages/register.html">Asociese</a><img class="socio-logo"
-                        src="/images/socioAsociate.png" alt=""></div>
-                <div class="head-elem"><a href="/pages/about.html">¿Quiénes Somos?</a></div>
+                <div><a href="profile.html">Mi perfil</a></div>
+                <div class="head-elem"><a href="about.html">¿Quiénes Somos?</a></div>
+                <div class="head-elem"><a href="members.html">Administrar socios</a></div>
             </div>
         </div>
     </header>
@@ -59,7 +61,7 @@
                 aria-describedby="emailHelp">
         </div>
         <button class="btn btn-success" type="submit">Editar</button>
-        <button class="btn btn-danger"><a href="/pages/admin/members.html">Cancelar</a></button>
+        <button class="btn btn-danger"><a href="members.html">Cancelar</a></button>
 
 
     </form>

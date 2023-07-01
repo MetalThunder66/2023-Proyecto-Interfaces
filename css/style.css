@@ -12,8 +12,9 @@ body{
     }
 
     .logout-icon {
-        height: 40px;
+        height: 43px;
         padding-bottom: 5px;
+        margin-bottom: -4px;
         padding-left: 5px;
     }
 
@@ -29,25 +30,46 @@ body{
         border-bottom: solid 1px black; 
     }
 
-    .head-elem{
-        border-top: solid 0.01px rgb(91, 87, 87);  
-        padding-top: 10px;  
-    }
-
-    footer{
-        background-color: rgb(224, 218, 218);  
-    }
-
-
 }
 
 header{
     border-bottom: solid 0.01px rgb(91, 87, 87);
+    width: 97%;
 }
 
 a, a:visited{
     text-decoration: none;
     color: black;
+}
+
+
+
+.head-elem{
+    border-top: solid 0.01px rgb(91, 87, 87);  
+    margin-top: 15px; 
+    padding-top: 15px; 
+    
+}
+
+
+
+.modificar-socio{
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 10px;
+    
+}
+
+footer{
+    background-color: rgb(224, 218, 218);  
+}
+
+.footer-elem{
+    /* display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    border-bottom: solid 1px black;  */
 }
 
 span a, span a:visited {
@@ -59,11 +81,22 @@ span a, span a:visited {
     margin: 20px;
     padding: 25px;
     padding-bottom: 10px;
-    min-height: calc(100vh - 72.4px - 188.6px); /*se hace para que el footer este en el suelo amazing*/
 }
 
 .section-top{
     margin-top:80px;
+}
+
+.rotary-grupos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.rotary-grupos p{
+    padding-left: 20px;
 }
 
 .success {
@@ -91,6 +124,35 @@ span a, span a:visited {
     align-items: center;
 }
 
+.tabla {
+    margin-left: 10px;
+    border-color: #2f0404;
+    background-color: #f1f1f1;
+    width: 97%;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+
+.pasa-pagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px
+}
+
+.pasa-pagina img{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pasa-pagina p{
+    padding-top: 6px;
+}
 
 
 

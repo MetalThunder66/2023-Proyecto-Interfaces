@@ -13,9 +13,9 @@ formLogin.addEventListener("submit", function (e) {
     let password = formData.get("password");
 
     if (email == 'user@gmail.com' && password == 'user') {
-        window.location.href = "../pages/user/donaciones.html";
+        window.location.href = "/pages/user/home.html";
     } else if (email == 'admin@gmail.com' && password == 'admin') {
-        window.location.href = "../index.html";
+        window.location.href = "/pages/admin/home.html";
     } else {
         errorLogin.classList.remove("hidden");
     }
