@@ -5,4 +5,7 @@ poner todo lo del .doc con la info resumida (https://docs.google.com/document/d/
 AJAX hacerlo
 terminar footer
 hacer responsive con desktop
+hay que hacer el buscador de usuarios FUNCIONAL
+chequear que todo cumpla con los principios de GESTALT y leyes de UX.
 ARGUMENTAR TODO CON GESTALD, estamos preparados para el oral...
+chequear los enunciados del tp que este todo y entregar

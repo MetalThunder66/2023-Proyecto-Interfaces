@@ -30,6 +30,35 @@ body{
         border-bottom: solid 1px black; 
     }
 
+    .edit-popup-container {
+        background-color: rgb(126 192 255);
+        border: solid 1px gray;
+        border-radius: 10px;
+    }
+
+    .edit-popup-container label {
+        font-weight: 500;
+    }
+
+    .edit-popup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        padding: 25px 5px 5px 25px;
+    }
+
+    .edit-popup-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .edit-popup-buttons button {
+        margin-left: 30px;
+    }
+ 
 }
 
 header{
