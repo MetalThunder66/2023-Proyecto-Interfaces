@@ -5,6 +5,7 @@ let editPopup = document.querySelector('.edit-popup-container');
 let email = document.querySelector('#profile-email');
 let address = document.querySelector('#profile-address');
 let editError = document.querySelector('#edit-error');
+let editSuccess = document.querySelector('#edit-success');
 let acceptButton = document.querySelector('#edit-popup-btn-accept');
 let declineButton = document.querySelector('#edit-popup-btn-decline');
 
@@ -23,11 +24,13 @@ for (const BUTTON of editButtons) {
                     field.value = '';   //lo limpia
                     editPopup.classList.add("hidden");
                     editError.classList.add("hidden");
+                    editSuccess.classList.remove("hidden");
                 } else if (atributo == 'address') {
                     address.textContent = "Domicilio: " + field.value;
                     field.value = '';   //lo limpia
                     editPopup.classList.add("hidden");
                     editError.classList.add("hidden");
+                    editSuccess.classList.remove("hidden");
                 }
             } else {
                 editError.classList.remove("hidden");
