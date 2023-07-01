@@ -15,16 +15,17 @@ for (const BUTTON of editButtons) {
         
         let atributo = BUTTON.getAttribute("data-id");
         let field = document.querySelector('#edit-field');
-        console.log(atributo)
 
         acceptButton.addEventListener("click", function(e) {
             if (field.value !== '') {
                 if (atributo == 'email') {
                     email.textContent = field.value;
+                    field.value = '';   //lo limpia
                     editPopup.classList.add("hidden");
                     editError.classList.add("hidden");
                 } else if (atributo == 'address') {
                     address.textContent = field.value;
+                    field.value = '';   //lo limpia
                     editPopup.classList.add("hidden");
                     editError.classList.add("hidden");
                 }
