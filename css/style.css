@@ -11,6 +11,12 @@ body{
         padding-left: 5px;
     }
 
+    .logout-icon {
+        height: 40px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+
     #menu-collapse{
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
         border-top: solid 0.01px rgb(91, 87, 87);
@@ -53,7 +59,7 @@ span a, span a:visited {
     margin: 20px;
     padding: 25px;
     padding-bottom: 10px;
-    
+    min-height: calc(100vh - 72.4px - 188.6px); /*se hace para que el footer este en el suelo amazing*/
 }
 
 .section-top{

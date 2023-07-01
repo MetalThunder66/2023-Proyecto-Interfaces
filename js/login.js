@@ -13,7 +13,7 @@ formLogin.addEventListener("submit", function (e) {
     let password = formData.get("password");
 
     if (email == 'user@gmail.com' && password == 'user') {
-        window.location.href = "../index.html";
+        window.location.href = "../pages/user/donaciones.html";
     } else if (email == 'admin@gmail.com' && password == 'admin') {
         window.location.href = "../index.html";
     } else {

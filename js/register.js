@@ -19,7 +19,7 @@ formRegister.addEventListener("submit", function (e) {
 
     //si todos los campos estan completos, manda registro
     if (!(name.trim() === '' && date.trim() === '' && dni.trim() === '' && address.trim() === '' && email.trim() === '')) {
-        successRegister.classList.remove("hidden")
+        successRegister.classList.remove("hidden");
         btn_register.classList.add("hidden");
         btn_home.classList.remove("hidden");
     }

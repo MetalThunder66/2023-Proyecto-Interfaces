@@ -8,11 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>DONACIONES</title>
+    <title>MI PERFIL</title>
 </head>
 
 <body>
-    <header class="fixed-top">
+    <header>
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -21,11 +21,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a href="../index.html"><img src="../images/logo.png" alt="" class="rotary-logo"></a>
-                <div>
-                    <button class="btn btn-outline-success" type="submit" onclick="window.location.href = '../pages/login.html'">Ingresar</button>
-                    <button class="btn btn-primary" type="submit" onclick="window.location.href = '../pages/donaciones.html'">Dona</button>
-                </div>
-                
+                <button class="btn btn-outline-success" type="submit" onclick="window.location.href = '../pages/login.html'">Ingresar</button>
+                <button class="btn btn-primary" type="submit" onclick="window.location.href = '../pages/donaciones.html'">Dona</button>
 
             </div>
         </nav>
@@ -38,53 +35,21 @@
         </div>
     </header>
 
+    <h4>MI PERFIL</h4>
     <div>
-        <div class="contenido section-top">
-            <h4 class="donar">CÓMO DONAR</h4>
-            <p>Para aportar donaciones a nuestro club podés a través de transferencia bancaria o medios físicos, se
-                acepta
-                efectivo y en especie, para donaciones más importantes, por favor, contactános.</p>
-        </div>
-
-        <div class="contenido">
-            <h4 class="donar">Transferencia bancaria</h4>
-            <div class="donar">
-                <img src="../images/mercadoP-logo.png" alt="mercado-pago">
-                <div>
-                    <h6>Titular Cuenta Destino | Alias</h6>
-                    <p>John Doe | rotarySB</p>
-                    <h6>Cuenta Debito/ CBU</h6>
-                    <p>3971397139713</p>
-                    <h6>Tipo de Cuenta</h6>
-                    <p>CTA en Pesos</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="contenido" >
-            <h5 class="donar">Dirección física</h5>
-            <div class="donar">
-                <img height="120px" width="120px" src="../images/logo s.b..jpg" alt="fisica">
-                <p>Av. Smirnoff 1236 Sierras. Bayas Olavarría</p>
-               
-            </div>
-        </div>
-
-        <div class="contenido">
-            <h5 class="contacto">Contactanos</h5>
-            <div class="contacto">
-                <div>
-                    <img src="../images/whatsapp-logo.png" alt="whatsapp">
-                    <p>+54 2284 602566</p>
-                </div>
-                <div>
-                    <img src="../images/gmail-logo.png" alt="gmail">
-                    <p>donaciones.rotary.sb@gmail.com</p>
-                </div>
-            </div>
-        </div>
-
-
+        <ul>
+            <li>Nombre y apellido: John Doe</li>
+            <li>Fecha Nacimiento: DD/MM/YYYY</li>
+            <li>44.284.548</li>
+            <li>Club: Rotaract</li>
+            <li>Años en rotary: 2 años</li>
+            <li>Email: jaimito@gmail.com
+                <button>Imagen Editar</button>
+            </li>
+            <li>Domicilio: Av. Smirnoff 7400, Piso 1B
+                <button>Imagen Editar</button>
+            </li>
+        </ul>
     </div>
 
     <footer class="border-top flex-row">
