@@ -53,7 +53,7 @@ async function show() {
             e.preventDefault();
 
             try {//buscamos ese obj en el que hayamos hecho click y lo eliminamos
-                let res = await fetch(`${`https://64a08f0eed3c41bdd7a75c41.mockapi.io/socio`}/${boton.id}?page=${pageNum}&limit=4`, {
+                let res = await fetch(`https://64a08f0eed3c41bdd7a75c41.mockapi.io/socio/${boton.id}`, {
                     "method": "DELETE"
                 });
             }
@@ -85,11 +85,82 @@ nextBtn.addEventListener("click", function (e) {
 
 
 goBackBtn.addEventListener("click", function (e) {
-    e.preventDefault();
+    if (pageNum - 1 > 0) {
+        e.preventDefault();
 
-    pageNum = pageNum - 1;
+        pageNum = pageNum - 1;
 
-    pageNumDom.innerHTML = pageNum;//esto para que el usuario sepa en qué pág está
+        pageNumDom.innerHTML = pageNum;//esto para que el usuario sepa en qué pág está
 
-    show();
+        show();
+    }
 });
+
+
+
+async function browse() {
+    let browseInput = document.querySelector("#browse-input");
+    let searchValue = browseInput.value;
+
+    try {
+        let response = await fetch(
+            `https://64a08f0eed3c41bdd7a75c41.mockapi.io/socio?search=${searchValue}`
+        );
+
+        if (response.ok) {
+            let json = await response.json();
+
+            let tbody = document.querySelector("#products-list");
+            tbody.innerHTML = "";
+
+            for (const item of json) {
+                console.log(item);
+                tbody.innerHTML += `
+            <tr>
+              <td>${item.dni}</td>
+              <td>${item.email}</td>
+              <td>
+                <a href="editMember.html?id=${item.id}">
+                  <img class="btn-primary modificar-socio" src="/images/edit.png" alt="edit-member" />
+                </a> 
+                <a class="delete-btn" id="${item.id}">
+                  <img class="btn-danger modificar-socio" src="/images/delete.png" alt="delete-member" />
+                </a>
+              </td>
+            </tr>
+          `;
+            }
+
+            let deleteButtons = document.querySelectorAll(".delete-btn");
+            deleteButtons.forEach((boton) => {
+                boton.addEventListener("click", async function (e) {
+                    e.preventDefault();
+
+                    try {
+                        let res = await fetch(
+                            `https://64a08f0eed3c41bdd7a75c41.mockapi.io/socio/${boton.id}`,
+                            {
+                                method: "DELETE",
+                            }
+                        );
+                    } catch (error) {
+                        console.log(error);
+                    }
+
+                    show();
+                });
+            });
+        } else {
+            console.log("Something went wrong with the URL");
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+let browseButton = document.querySelector("#browse-button");
+
+browseButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    browse();
+})
