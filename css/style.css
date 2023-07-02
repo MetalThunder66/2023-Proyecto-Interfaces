@@ -113,7 +113,11 @@ span a, span a:visited {
     margin: 20px;
     padding: 25px;
     padding-bottom: 10px;
-    min-height: calc(100vh - 72.4px - 188.6px);     /*para que el footer quede abajo*/
+    /* min-height: calc(100vh - 72.4px - 188.6px);  */    /*para que el footer quede abajo*/
+}
+
+.alturaFooter{
+    min-height: calc(100vh - 72.4px - 188.6px);    
 }
 
 .section-top{
