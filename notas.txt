@@ -1,4 +1,6 @@
-doc bootstrap: https://getbootstrap.com/docs/5.3/getting-started/introduction/
+información relevante:
+trabajamos con las dimensiones 412*915 para el mobile (samsung galaxy s20 ultra)
+
 
 MOBILE FIRST!
 poner todo lo del .doc con la info resumida (https://docs.google.com/document/d/1CzGqlO_2zYGY6bqQCE_2oyj2J6h9YNIlGBkiYyLvtO0/edit) en los .html

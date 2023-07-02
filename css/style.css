@@ -23,13 +23,6 @@ body{
         border-top: solid 0.01px rgb(91, 87, 87);
     }
 
-    .footer-elem{
-        display: flex;
-        justify-content: space-evenly;
-        padding-top: 10px;
-        border-bottom: solid 1px black; 
-    }
-
     .edit-popup-container {
         background-color: rgb(126 192 255);
         border: solid 1px gray;
@@ -63,7 +56,7 @@ body{
 
 header{
     border-bottom: solid 0.01px rgb(91, 87, 87);
-    width: 97%;
+    width: 100%;
 }
 
 a, a:visited{
@@ -93,16 +86,18 @@ a, a:visited{
 }
 
 footer{
-    background-color: rgb(224, 218, 218);  
+    background-color: rgb(224, 218, 218);
+    width: 100%;  
 }
 
-/* 
+ 
 .footer-elem{
     display: flex;
-    justify-content: space-evenly;
     padding-top: 10px;
     border-bottom: solid 1px black;  
-}*/
+    align-content: center;
+    justify-content: center;
+}
 
 span a, span a:visited {
     text-decoration: underline;
@@ -191,7 +186,6 @@ span a, span a:visited {
     padding-top: 6px;
 }
 
-
-
-
-
+.selected {
+    background-color: rgb(197, 197, 197);
+}
