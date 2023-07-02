@@ -39,40 +39,44 @@
     </div>
   </header>
 
-  <form id="tablaDinamica">
-    <div class="section-top">
-      <div>
-        <h3 style="padding-left: 10px">SOCIOS</h3>
-        <h5 for="browser" style="padding-left: 10px">Buscar Socio:</h5>
-      </div>
-      <div class="buscador" style="padding-left: 10px">
+  <div class="alturaFooter">
+    <form id="tablaDinamica">
+      <div class="section-top">
         <div>
-          <input type="text" id="browse-input" placeholder="4526422 | franco@gmail.com" />
-          <a id="browse-button"><img src="/images/search.png" alt="buscar-socio" /></a>
+          <h3 style="padding-left: 10px">SOCIOS</h3>
+          <h5 for="browser" style="padding-left: 10px">Buscar Socio:</h5>
         </div>
-        <a href="createMember.html"><img class="modificar-socio" src="/images/saveuser.png" alt="new-member" /></a>
+        <div class="buscador" style="padding-left: 10px">
+          <div>
+            <input type="text" id="browse-input" placeholder="4526422 | franco@gmail.com" />
+            <a id="browse-button"><img src="/images/search.png" alt="buscar-socio" /></a>
+          </div>
+          <a href="createMember.html"><img class="modificar-socio" src="/images/saveuser.png" alt="new-member" /></a>
+        </div>
       </div>
-    </div>
+  
+      <table class="table table-bordered tabla"> <!--tabla api-->
+        <thead>
+          <th>DNI</th>
+          <th>EMAIL</th>
+          <th>ACCIóN</th>
+        </thead>
+        <tbody id="products-list">
+  
+        </tbody>
+        <tfoot>
+          <tr> <!-- botones paginacion -->
+            <td><button id="go-back-btn"><img src="/images/arrow-left.png" alt="" /></button></td>
+            <td id="page-number"></td>
+            <td><button id="next-btn"><img src="/images/arrow-right.png" alt="" /></button></td>
+          </tr>
+        </tfoot>
+      </table>
+    </form>
+  
+  </div>
 
-    <table class="table table-bordered tabla"> <!--tabla api-->
-      <thead>
-        <th>DNI</th>
-        <th>EMAIL</th>
-        <th>ACCIóN</th>
-      </thead>
-      <tbody id="products-list">
-
-      </tbody>
-      <tfoot>
-        <tr> <!-- botones paginacion -->
-          <td><button id="go-back-btn"><img src="/images/arrow-left.png" alt="" /></button></td>
-          <td id="page-number"></td>
-          <td><button id="next-btn"><img src="/images/arrow-right.png" alt="" /></button></td>
-        </tr>
-      </tfoot>
-    </table>
-  </form>
-
+  
   <!-- tabla vieja
   <table class="table table-bordered tabla">
     <tr>
