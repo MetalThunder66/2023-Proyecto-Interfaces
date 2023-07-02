@@ -22,14 +22,14 @@ for (const BUTTON of editButtons) {
                 if (atributo == 'email') {
                     email.textContent = "Email: " + field.value;
                     field.value = '';   //lo limpia
-                    editPopup.classList.add("hidden");
                     editError.classList.add("hidden");
+                    editPopup.classList.add("hidden");
                     editSuccess.classList.remove("hidden");
                 } else if (atributo == 'address') {
                     address.textContent = "Domicilio: " + field.value;
                     field.value = '';   //lo limpia
-                    editPopup.classList.add("hidden");
                     editError.classList.add("hidden");
+                    editPopup.classList.add("hidden");
                     editSuccess.classList.remove("hidden");
                 }
             } else {
@@ -39,6 +39,7 @@ for (const BUTTON of editButtons) {
         });
 
         declineButton.addEventListener("click", function(e) {
+            editError.classList.add("hidden");
             editPopup.classList.add("hidden");
         });
     });

@@ -51,6 +51,15 @@ body{
     .edit-popup-buttons button {
         margin-left: 30px;
     }
+
+    .modificar-socio{
+        width: 50px;
+        height: 50px;
+        padding: 3px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-left: 56px;
+    }
  
 }
 
@@ -80,9 +89,17 @@ a, a:visited{
 .modificar-socio{
     width: 50px;
     height: 50px;
-    padding: 8px;
-    border-radius: 10px;
-    
+    padding: 3px;
+    border-radius: 10px;  
+}
+
+.crearSocio{
+    padding-right: 40px;
+}
+
+.editar-socio{
+    padding-left: 74px;
+    padding-bottom: 10px;
 }
 
 footer{
