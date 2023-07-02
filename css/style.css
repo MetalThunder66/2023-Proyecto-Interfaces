@@ -4,65 +4,6 @@ body{
     padding: 0;
 }
 
-@media (max-width: 900px) {
-    .rotary-logo, .socio-logo{
-        height: 55px;
-        padding-bottom: 5px;
-        padding-left: 5px;
-    }
-
-    .logout-icon {
-        height: 43px;
-        padding-bottom: 5px;
-        margin-bottom: -4px;
-        padding-left: 5px;
-    }
-
-    #menu-collapse{
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
-        border-top: solid 0.01px rgb(91, 87, 87);
-    }
-
-    .edit-popup-container {
-        background-color: rgb(126 192 255);
-        border: solid 1px gray;
-        border-radius: 10px;
-    }
-
-    .edit-popup-container label {
-        font-weight: 500;
-    }
-
-    .edit-popup {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 95%;
-        padding: 25px 5px 5px 25px;
-    }
-
-    .edit-popup-buttons {
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
-        width: 100%;
-    }
-
-    .edit-popup-buttons button {
-        margin-left: 30px;
-    }
-
-    .modificar-socio{
-        width: 50px;
-        height: 50px;
-        padding: 3px;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        margin-left: 56px;
-    }
- 
-}
-
 header{
     border-bottom: solid 0.01px rgb(91, 87, 87);
     width: 100%;
@@ -94,7 +35,7 @@ a, a:visited{
 }
 
 .crearSocio{
-    padding-right: 40px;
+    padding-right: 15px;
 }
 
 .editar-socio{
@@ -205,4 +146,66 @@ span a, span a:visited {
 
 .selected {
     background-color: rgb(197, 197, 197);
+}
+
+@media (max-width: 900px) {
+    .rotary-logo, .socio-logo{
+        height: 55px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+
+    .logout-icon {
+        height: 43px;
+        padding-bottom: 5px;
+        margin-bottom: -4px;
+        padding-left: 5px;
+    }
+
+    #menu-collapse{
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+        border-top: solid 0.01px rgb(91, 87, 87);
+    }
+
+    .edit-popup-container {
+        background-color: rgb(126 192 255);
+        border: solid 1px gray;
+        border-radius: 10px;
+    }
+
+    .edit-popup-container label {
+        font-weight: 500;
+    }
+
+    .edit-popup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        padding: 25px 5px 5px 25px;
+    }
+
+    .edit-popup-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .edit-popup-buttons button {
+        margin-left: 30px;
+    }
+
+    .modificar-socio{
+        width: 50px;
+        height: 50px;
+        padding: 3px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .crearSocio{
+        padding-right: 0px;
+    }
+ 
 }
