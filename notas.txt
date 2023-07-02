@@ -2,10 +2,8 @@ doc bootstrap: https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
 MOBILE FIRST!
 poner todo lo del .doc con la info resumida (https://docs.google.com/document/d/1CzGqlO_2zYGY6bqQCE_2oyj2J6h9YNIlGBkiYyLvtO0/edit) en los .html
-AJAX hacerlo
 terminar footer
 hacer responsive con desktop
-hay que hacer el buscador de usuarios FUNCIONAL
 chequear que todo cumpla con los principios de GESTALT y leyes de UX.
 ARGUMENTAR TODO CON GESTALD, estamos preparados para el oral...
 chequear los enunciados del tp que este todo y entregar
